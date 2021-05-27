@@ -174,7 +174,7 @@ class App extends Component {
           <div>
             {
               this.state.ownedTokenContentLinks.map((ownedToken, index) => {
-                return (<div className="nft-card">
+                return (<div key={index} className="nft-card">
                   <p>content: {ownedToken}</p>
                   <img alt='deloittenftimg' src={ownedToken}/>
                   <p>link to metadata: {this.state.ownedTokenMetadataLinks[index]}</p>
